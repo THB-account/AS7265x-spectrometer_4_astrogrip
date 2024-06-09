@@ -39,11 +39,19 @@ def newFile(fname):
 
 # Test read of all calibrated and raw values
 def ReadAllData():
+	# put any calibration of spectrometer here
+	#######
 
-	duration = 3600 * 20									# Desired time in secs for total run. 3600 secs per hour. 60 secs per minute.
-	sleepPeriod = 60 * 10										# Sleep seconds between passes (interval between measurements)
-	procTime = 6										# Board compute time per cycle (1 pass of RAW and CAL data fetch)
-	passes = int(duration / (sleepPeriod + procTime))
+
+	#######
+	#duration = 3600 * 20									# Desired time in secs for total run. 3600 secs per hour. 60 secs per minute.
+	
+	# in seconds
+	#sleepPeriod = 60 * 10										# Sleep seconds between passes (interval between measurements)
+	sleepPeriod = 4
+	procTime = 20										# Board compute time per cycle (1 pass of RAW and CAL data fetch)
+	#passes = int(duration / (sleepPeriod + procTime))
+	passes = procTime
 	print ("Test duration(s): " +str(duration) + " Sleep period: " + str(sleepPeriod) + " Number of Passes: " +str(passes) )
 
 	print ("Start time: " + str(datetime.datetime.now()))
