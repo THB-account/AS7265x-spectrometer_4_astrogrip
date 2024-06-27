@@ -19,7 +19,7 @@ def readRAW()
 def readCAL()
 """
 
-fname = '/home/pi/python/'							# Directory for results data
+fname = './'							# Directory for results data
 
 def newFile(fname):
 
