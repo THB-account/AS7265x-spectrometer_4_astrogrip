@@ -52,7 +52,7 @@ def ReadAllData():
 	procTime = 20										# Board compute time per cycle (1 pass of RAW and CAL data fetch)
 	#passes = int(duration / (sleepPeriod + procTime))
 	passes = procTime
-	print ("Test duration(s): " +str(duration) + " Sleep period: " + str(sleepPeriod) + " Number of Passes: " +str(passes) )
+	#print ("Test duration(s): " +str(duration) + " Sleep period: " + str(sleepPeriod) + " Number of Passes: " +str(passes) )
 
 	print ("Start time: " + str(datetime.datetime.now()))
 
